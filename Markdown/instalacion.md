@@ -11,7 +11,7 @@ Manual completo para instalar y configurar el sistema educativo.
 | MongoDB    | 5.0            | 6.0+        | ⚠      |
 | Redis      | 6.x            | 7.x         |        |
 
-## 🖥️ Sistemas Operativos Soportados
+## 💻 Sistemas Operativos Soportados
 
 - ✅ Windows 10/11
 - ✅ macOS Monterey+
