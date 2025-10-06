@@ -1,4 +1,3 @@
-````markdown
 # 🔐 Sistema de Autenticación - Login
 
 Portal de acceso seguro para **CotareloManage**
@@ -84,6 +83,7 @@ Usuario → Introduce credenciales
               → Recurso autorizado
               → Mostrar contenido
 ```
+
 ````
 
 ---
@@ -121,3 +121,4 @@ Los picos de login se producen:
 ```
 
 ```
+````
