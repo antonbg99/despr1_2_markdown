@@ -24,14 +24,13 @@ CotareloManage es una plataforma innovadora diseñada para facilitar la administ
 | Satisfacción         | 4.8/5  | ⭐ Muy alta  |
 
 ## 🏗️ Arquitectura del Sistema
-
+graph TD
     A[Cliente Web] --> B[Load Balancer]
     B --> C[Servidor App 1]
     B --> D[Servidor App 2]
     C --> E[Base de Datos]
     D --> E
     E --> F[Sistema de Backups]
-    
     G[App Móvil] --> B
     H[API Externa] --> I[Microservicio Auth]
     I --> E
