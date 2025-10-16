@@ -68,23 +68,31 @@ Los administradores tienen control total:
 
 ## 🔄 Flujo de Autenticación
 
-```plaintext
-Usuario → Introduce credenciales
-  POST /auth/login
-    → Verificar usuario
-    → Datos usuario
-    → Almacenar sesión
-      → JWT Token + User Info
-        → Redireccionar a dashboard
-          → Acceso a recurso protegido
-            GET /api/resource (Bearer Token)
-              → Verificar sesión
-              → Sesión válida
-              → Recurso autorizado
-              → Mostrar contenido
-```
+```mermaid
+sequenceDiagram
+    participant U as Usuario
+    participant F as Frontend
+    participant A as API Auth
+    participant D as Database
+    participant R as Redis
 
-````
+    U->>F: Introduce credenciales
+    F->>A: POST /auth/login
+    A->>D: Verificar usuario
+    D-->>A: Datos usuario
+    A->>R: Almacenar sesión
+    A-->>F: JWT Token + User Info
+    F-->>U: Redireccionar a dashboard
+
+    Note over U,R: Usuario autenticado
+
+    U->>F: Acceso a recurso protegido
+    F->>A: GET /api/resource (Bearer Token)
+    A->>R: Verificar sesión
+    R-->>A: Sesión válida
+    A-->>F: Recurso autorizado
+    F-->>U: Mostrar contenido
+```
 
 ---
 
@@ -117,8 +125,3 @@ Los picos de login se producen:
 ---
 
 ✨ Sistema de login seguro y confiable 🔐
-
-```
-
-```
-````

@@ -55,8 +55,6 @@ NF =  Σ (Ei × Pi) / Σ Pi
         i=1
 ```
 
-````
-
 Donde:
 
 - **NF** = Nota Final
@@ -85,8 +83,3 @@ Consulta nuestro [centro de soporte](https://support.cotarelomanage.es/) o conta
 ---
 
 ✨ Configuración flexible para cada institución educativa 🎛
-
-```
-
-```
-````

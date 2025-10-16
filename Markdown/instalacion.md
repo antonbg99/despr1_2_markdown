@@ -36,14 +36,14 @@ wget -qO- https://install.CotareloManage.es/setup.sh | bash
 
 ### Opción 2: Instalación Manual
 
-**Paso 1: Clonar el Repositorio**
+#### Paso 1: Clonar el Repositorio
 
 ```bash
 git clone https://github.com/CotareloManage/sistema-escolar.git
 cd sistema-escolar
 ```
 
-**Paso 2: Configurar Variables de Entorno**
+#### Paso 2: Configurar Variables de Entorno
 
 Crea un archivo `.env` con la siguiente configuración:
 
@@ -63,7 +63,7 @@ SMTP_USER=tu-email@gmail.com
 SMTP_PASS=tu-contraseña-app
 ```
 
-**Paso 3: Instalar Dependencias**
+#### Paso 3: Instalar Dependencias
 
 ```bash
 # Instalar dependencias del backend
